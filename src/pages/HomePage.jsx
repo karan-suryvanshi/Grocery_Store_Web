@@ -3,6 +3,8 @@ import {CategoryBar} from '../components/CategoryBar';
 import {HeroSlider} from '../components/HeroSlider';
 import FeaturedBanners from '../components/FeaturedBanners';
 import PopularProducts from '../components/PopularProducts';
+import Lifestyle from '../components/Lifestyle';
+import SpecialOffers from '../components/SpecialOffer';
 
 const HomePage = () => {
   return (
@@ -11,6 +13,8 @@ const HomePage = () => {
       <HeroSlider/>
       <FeaturedBanners/>
       <PopularProducts/>
+      <Lifestyle/>
+      <SpecialOffers/>
     </div>
   )
 }

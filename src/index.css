@@ -54,6 +54,14 @@ body{
     cursor: pointer;
 }
 
+.transition-transform {
+    transition: transform 0.2s ease;
+}
+
+.transition-transform:hover {
+    transform: translateY(-2px);
+}
+
 /* Hide scrollbar for categories navigation */
 
 .no-scrollbar::-webkit-scrollbar {
@@ -94,6 +102,16 @@ body{
 .hover-white-btn:hover {
   background-color: white !important;
   color: #1f2937 !important;
+}
+
+.account-page-card {
+  max-width: 960px;
+  min-height: 600px;
+  border: 1px solid var(--bs-border-color);
+}
+
+.account-page-intro {
+  background: linear-gradient(145deg, #b91c1c, #7f1d1d);
 }
 
 /* Line clamp */

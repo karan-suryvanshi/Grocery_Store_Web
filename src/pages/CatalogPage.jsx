@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import { POPULAR_PRODUCTS, SIDEBAR_CATEGORIES, SPECIAL_OFFERS } from '../data/AllData';
 
-export const CatalogPage = ({ initialCategory = 'All', intialCategory }) => {
-    const resolvedCategory = intialCategory ?? initialCategory;
-    const [selectedCategory, setSelectedCategory] = useState(resolvedCategory);
+export const CatalogPage = ({ initialCategory = 'All' }) => {
+    const [selectedCategory, setSelectedCategory] = useState(initialCategory);
     const [searchFilter, setSearchFilter] = useState('');
     const [sortBy, setSortBy] = useState('featured');
 

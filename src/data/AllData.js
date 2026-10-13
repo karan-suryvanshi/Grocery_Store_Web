@@ -70,7 +70,7 @@ export const HERO_SLIDES = [
     {
         id: 1,
         tag: '🔥 Free shipping - orders over $100',
-        title: 'Healthy Food Avilable to Everyone',
+        title: 'Healthy Food Available to Everyone',
         ctaText: 'shop now',
         bgColor: '#6dafca',
         image: heroSlider1,

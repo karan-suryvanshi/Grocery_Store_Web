@@ -11,7 +11,7 @@ export const PopularProducts = () => {
 
                 <div className="col-12 col-lg-3">
                     <div className="border-bottom pb-3 mb-4">
-                        <h2 className="h4 fw-bold mb-0">Categories`</h2>
+                        <h2 className="h4 fw-bold mb-0">Categories</h2>
 
                     </div>
 
@@ -19,8 +19,8 @@ export const PopularProducts = () => {
                         {SIDEBAR_CATEGORIES.map((cat) => (
                             <div key={cat.id} className="col-6 col-sm-4 col-lg-12">
 
-                                <a href={`#category-${cat.id}`} className="d-flex align-items-centre text-decoration-none text-dark p-2 rounded-3 hover-bg-light transition">
-                                    <div className="d-flex align-items-centre justify-content-centre bg-body-tertiary rounded-circle p-2 flex-shrink-0" style={{width: '52px', height: '52px'}}>
+                                <a href={`#category-${cat.id}`} className="d-flex align-items-center text-decoration-none text-dark p-2 rounded-3 hover-bg-light transition">
+                                    <div className="d-flex align-items-center justify-content-center bg-body-tertiary rounded-circle p-2 flex-shrink-0" style={{width: '52px', height: '52px'}}>
 
                                         <img src={cat.image} alt={cat.name} width="34" height="34" style={{objectFit: 'contain'}}/>
 
@@ -47,10 +47,10 @@ export const PopularProducts = () => {
                 {/* Right Column Popular Products Part */}
 
                 <div className="col-12 col-lg-9">
-                    <div className="d-flex align-items-centre justify-content-between border-bottom pb-3 mb-4">
+                    <div className="d-flex align-items-center justify-content-between border-bottom pb-3 mb-4">
                         <h2 className="h4 fw-bold mb-0">Popular Products</h2>
 
-                        <a href="#catalog" className="text-decoration-none text-dark fs-sm fw-bold hover-red d-flex align-items-centre gap-1">
+                        <a href="#catalog-all" className="text-decoration-none text-dark fs-sm fw-bold hover-red d-flex align-items-center gap-1">
                             <span>View all</span>
                             <i className="bi bi-chevron-right fs-xs"></i>
                         </a>

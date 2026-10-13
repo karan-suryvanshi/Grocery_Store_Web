@@ -8,10 +8,10 @@ import {
   BiMoon,
   BiSearch,
   BiSun,
-  BiUser,
 } from 'react-icons/bi';
 import { useCart } from '../context/CartContext';
 import { useDelivery } from '../context/DeliveryContext';
+import Account from './Account';
 
 export const Navbar = () => {
   const { totalItems, setIsCartOpen } = useCart();
@@ -169,15 +169,8 @@ export const Navbar = () => {
             )}
           </button>
 
-          {/* Account Icon */}
-          <a
-            href="#account"
-            className="btn btn-outline-secondary border-0 rounded-circle p-2 d-none d-sm-flex align-items-center justify-content-center"
-            style={{ width: '40px', height: '40px' }}
-            aria-label="Account"
-          >
-            <BiUser className="fs-5" aria-hidden="true" />
-          </a>
+          {/* Account */}
+          <Account />
 
           {/* Shopping Cart Trigger */}
           <button
